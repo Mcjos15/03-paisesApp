@@ -1,0 +1,25 @@
+1. con los observadores nos suscribimos a los cambios de un URL
+2. el ngoninit es cuando el componente está inicializado
+3. switchMap es uno de los operador que permite recibir un observable y devolver un observable
+4. se le indica a typeScript con ! que ignore cuando algo puede ser nulo
+5. El tap es un operador que dispara un efecto secundario
+6. el titlecase hace que la primera letra de las palabras se pongan en mayuscula
+7. Ordenar codifo de forma simultanea:
+  Creo que encontré la respuesta, por si a alguien le sirve:
+
+
+- se seleccionan todas las líneas con CTRL + Shift + Alt + down
+
+- se presiona CTRL + right para llegar al final y se escribe una coma
+
+- se retrocede a la posición anterior a la coma y se pulsa CTRL + Alt + Left
+
+- se pulsa ' y los códigos quedan entrecomillados como strings
+
+- luego se ubican los cursores a la derecha de la coma y se presiona Alt + Fin seleccionando lo restante
+
+- se elimina la selección con Supr
+
+- se presiona Supr para organizar los códigos en una única línea lista para copiar y pegar en el Array
+
+

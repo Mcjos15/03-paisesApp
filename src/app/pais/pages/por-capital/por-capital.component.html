@@ -1,0 +1,27 @@
+<div class="animate__animated animate__backInUp">
+
+    <h2>Por capital</h2>
+    <hr>
+
+    <div class="row">
+        <div class="col">
+
+            <!-- así llamamos el metodo de buscar de este componente al componente del input -->
+            <app-pais-input (onEnter)="buscar( $event )" (onDebounce)="sugerencias( $event)" placeholder="Buscar capital..."></app-pais-input>
+
+            <!-- si va en llaves cuadradas significa que se va a mandar el termino
+        si no se manda en forma de String -->
+        </div>
+    </div>
+    <hr>
+</div>
+<div *ngIf="hayError" class="alert alert-danger">No se encontró {{termino}}</div>
+
+
+<div *ngIf="!hayError && (capitales.length >0)" class="row">
+    <div class="col">
+        <app-pais-tabla [paises]="capitales"></app-pais-tabla>
+
+        <!-- así le mando la información de este componente a la tabla global -->
+    </div>
+</div>
